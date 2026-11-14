@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesa de ayuda</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+  <h1>🛟 Mesa de ayuda</h1>
+  <span id="quien"></span>
+  <button id="salir" class="secundario" hidden>Salir</button>
+</header>
+
+<main>
+  <section id="login" class="tarjeta">
+    <h2>Iniciar sesión</h2>
+    <form id="form-login">
+      <label>Correo <input name="correo" type="email" required autocomplete="username"></label>
+      <label>Contraseña <input name="clave" type="password" required autocomplete="current-password"></label>
+      <button>Entrar</button>
+      <p class="error" id="error-login"></p>
+    </form>
+    <details>
+      <summary>Cuentas de demostración</summary>
+      <ul>
+        <li>admin@demo.local / demo-admin-123</li>
+        <li>agente@demo.local / demo-agente-123</li>
+        <li>usuaria@demo.local / demo-usuaria-123</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="panel" hidden>
+    <div id="metricas" class="metricas" hidden></div>
+
+    <div class="tarjeta">
+      <h2>Nuevo ticket</h2>
+      <form id="form-ticket" class="grilla">
+        <input name="titulo" placeholder="Título (ej.: No funciona la impresora)" required minlength="5">
+        <select name="categoria"><option>hardware</option><option>software</option><option>red</option><option>accesos</option><option selected>otro</option></select>
+        <select name="prioridad"><option>alta</option><option selected>media</option><option>baja</option></select>
+        <textarea name="descripcion" placeholder="Describe el problema" required minlength="10"></textarea>
+        <button>Crear</button>
+      </form>
+      <p class="error" id="error-ticket"></p>
+    </div>
+
+    <div class="tarjeta">
+      <div class="filtros">
+        <h2>Tickets</h2>
+        <input id="buscar" type="search" placeholder="Buscar">
+        <select id="f-estado"><option value="">Todos los estados</option><option>abierto</option><option>en_progreso</option><option>en_espera</option><option>resuelto</option><option>cerrado</option></select>
+        <label class="check"><input type="checkbox" id="f-vencidos"> Solo vencidos</label>
+      </div>
+      <table>
+        <thead><tr><th>#</th><th>Título</th><th>Prioridad</th><th>Estado</th><th>Vence</th></tr></thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>
+
+    <div id="detalle" class="tarjeta" hidden></div>
+  </section>
+</main>
+<script src="app.js" type="module"></script>
+</body>
+</html>

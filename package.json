@@ -1,0 +1,20 @@
+{
+  "name": "mesa-de-ayuda",
+  "version": "1.0.0",
+  "description": "Mesa de ayuda (help desk) con tickets, prioridades con SLA, roles y métricas. API REST + interfaz web.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "dev": "node --watch src/server.ts",
+    "test": "node --test --test-reporter=spec test/",
+    "seed": "node src/seed.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "license": "MIT"
+}
