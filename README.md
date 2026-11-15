@@ -59,4 +59,4 @@ test/            pruebas
 Notificaciones por correo al vencer el SLA, adjuntos, paginación y despliegue con PostgreSQL.
 
 ---
-Proyecto de portafolio desarrollado con asistencia de herramientas de IA. Licencia MIT.
+Licencia MIT.
