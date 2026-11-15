@@ -1,5 +1,9 @@
 # 🛟 Mesa de ayuda (Help Desk)
 
+> 🇬🇧 [English version](README.en.md)
+
+![Panel de la mesa de ayuda: métricas de SLA y lista de tickets](docs/captura.png)
+
 Sistema de tickets de soporte técnico: los usuarios reportan problemas, el equipo de soporte los asigna, cambia su estado y responde, y la jefatura ve métricas de cumplimiento del **SLA** (tiempo máximo de resolución según la prioridad).
 
 *Help desk ticketing system with SLA tracking, role-based access, internal notes, audit history and metrics. REST API + web UI.*
@@ -17,7 +21,7 @@ En muchas empresas los pedidos de soporte llegan por WhatsApp o correo y se pier
 - **Seguridad:** contraseñas con `scrypt` y sal, sesiones con token y vencimiento, validación de entradas y errores sin filtrar detalles internos.
 
 ## Tecnología
-Node.js 24+ con TypeScript (ejecución directa con *type stripping*), Express 5, SQLite (`node:sqlite`, sin dependencias nativas), HTML/CSS/JS sin frameworks, pruebas con `node:test` y CI con GitHub Actions.
+Node.js 24+ con TypeScript (ejecución directa con *type stripping*), Express 5, SQLite (`node:sqlite`, sin dependencias nativas), HTML/CSS/JS sin frameworks, pruebas con `node:test`.
 
 ## Cómo correrlo
 ```bash
