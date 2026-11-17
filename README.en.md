@@ -1,6 +1,6 @@
-# 🛟 Help Desk
+# Help Desk
 
-> 🇪🇸 [Versión en español](README.md)
+> [Versión en español](README.md)
 
 ![Help desk dashboard: SLA metrics and ticket list](docs/captura.png)
 

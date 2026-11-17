@@ -1,6 +1,6 @@
-# 🛟 Mesa de ayuda (Help Desk)
+# Mesa de ayuda (Help Desk)
 
-> 🇬🇧 [English version](README.en.md)
+> [English version](README.en.md)
 
 ![Panel de la mesa de ayuda: métricas de SLA y lista de tickets](docs/captura.png)
 
